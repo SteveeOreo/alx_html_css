@@ -1,6 +1,9 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
 }
 main {
     display: flex;
@@ -10,8 +13,32 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(37, 185, 40, 0.695);
 }
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: #eef;
+    padding: 1rem;
+    border-left: 4px solid #99c;
 }
+header {
+    background-color: #32ca17;
+    color: rgb(249, 251, 241);
+    padding: 1rem;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  header li.logo {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  
