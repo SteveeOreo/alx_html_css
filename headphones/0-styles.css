@@ -1,0 +1,150 @@
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        /* Variables */
+        :root {
+          --primary-color: #FF6565;
+          --text-light: #fff;
+          --text-dark: #333;
+          --max-width: 1000px;
+        }
+      .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+      }
+
+      .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      
+      .nav-links {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      
+      .nav-links a:hover,
+      .nav-links a:active {
+        color: var(--primary-color);
+      }
+      /* nav ul li a:hover {
+        background-color:rgba(255, 101, 101, 1);
+        color: #fff;
+      }*/
+      /* Reset */
+
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--text-light);
+    background: #000;
+  }
+  
+  .hero {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient rgba(7, 22, 41, 1);
+    z-index: -1;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+  }
+  
+  
+  .container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+  .hero-content {
+    margin-top: 80px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .subheading {
+    margin: 10px 0;
+  }
+  
+  .cta {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .cta:hover,
+  .cta:active {
+    opacity: 0.9;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 480px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content {
+      margin-top: 60px;
+    }
+  }
+  
+
+  
+  
